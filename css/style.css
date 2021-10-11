@@ -1,0 +1,45 @@
+/* general rules */
+
+section{
+    margin-bottom: 50px;
+}
+
+[class *= 'col-']{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    min-height: 50px;
+    /* da togliere */
+}
+
+.mp-big{
+    min-height: 400px;
+}
+
+/* specific rules */
+
+.mp-header{
+    background-color: #2c3e50;
+    height: 70px; 
+    /*  da togliere */
+}
+
+.mp-green{
+    height: 400px;
+    background-color: #1abc9c;
+}
+
+.mp-image, .mp-par{
+    height: 150px;
+}
+
+.mp-title, .mp-subtitle, .mp-separator{
+    text-align: center;
+}
+
+.mp-separator{
+    vertical-align: middle;
+}
+
+.mp-subtitle{}
+
+.mp-par{}
