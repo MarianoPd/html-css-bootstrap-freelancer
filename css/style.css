@@ -1,7 +1,7 @@
 /* general rules */
 
-section{
-    margin-bottom: 50px;
+.mp-section{
+    padding: 50px 0;
 }
 
 .mp-no-margin-bottom{
@@ -23,16 +23,6 @@ section{
     min-height: 400px;
 }
 
-/* specific rules */
-
-.mp-header, .mp-footer{
-    background-color: #2c3e50;
-    height: 70px; 
-    /*  da togliere */
-}
-
-.mp-footer{}
-
 .mp-green{
     min-height: 400px;
     background-color: #1abc9c;
@@ -41,10 +31,68 @@ section{
 
 .mp-navy{
     background-color: #3a546d;
+    color: white;
 }
 
-.mp-image, .mp-par{
-    height: 150px;
+.mp-button-1{
+    border: 1px solid white;
+    margin: 20px;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.mp-button-2{
+    margin: 20px;
+    background-color: #1abc9c;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* specific rules */
+
+.mp-header, .mp-footer{
+    background-color: #2c3e50;
+    height: 80px; 
+    color: white;
+    /*  da togliere */
+}
+
+.mp-nav{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mp-jumbotron{
+    margin-top: 80px;
+}
+
+.mp-port-item{
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.mp-port-item img{
+    width: 100%;
+}
+
+.mp-footer{}
+
+.mp-image{
+   width: 300px ;
+}
+
+.mp-custom-border{
+    background: none;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.mp-custom-border::placeholder{
+    color: black;
 }
 
 .mp-title, .mp-subtitle, .mp-separator{
@@ -57,5 +105,10 @@ section{
 
 .mp-subtitle{}
 
-.mp-par{}
+.mp-par{
+    height: 150px
+}
+
+
+
 
