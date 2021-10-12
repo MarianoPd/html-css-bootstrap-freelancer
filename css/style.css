@@ -9,16 +9,6 @@ h2,h3{
     text-transform: uppercase;
 }
 
-[class *= 'col-']{
-    background-color: antiquewhite;
-    border: 1px solid black;
-    min-height: 50px;
-    /* da togliere */
-}
-
-[class *= 'container']{
-    background-color: lightsalmon;
-}
 
 .mp-big{
     min-height: 400px;
@@ -45,6 +35,13 @@ h2,h3{
     background: none;
     border-radius: 5px;
     padding: 5px 10px;
+    color: white;
+}
+
+.mp-button-1:hover{
+    background-color: white;
+    border: 0;
+    color: #2c3e50;
 }
 
 .mp-button-2{
@@ -54,8 +51,38 @@ h2,h3{
     padding: 5px 10px;
 }
 
+.mp-satanic-row, .mp-satanic-row-blue{
+    position: relative;
+    width: 25%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.mp-satanic-row-blue{
+    color: #2c3e50;
+}
+
+.mp-satanic-line, .mp-satanic-line-blue{
+    height: 3px;
+    width: 40%;
+    border-radius: 3px;
+    background-color:white;
+    display: inline-block;
+}
+
+.mp-satanic-line-blue{
+    background-color: #2c3e50;
+}
+
 /* specific rules */
 
+
+/* HEADER */
 .mp-header, .mp-footer{
     background-color: #2c3e50;
     height: 80px; 
@@ -69,26 +96,51 @@ h2,h3{
     text-transform: uppercase;
 }
 
+/* JUMBOTRON */
 .mp-jumbotron{
     margin-top: 80px;
 }
 
+.mp-image{
+    width: 300px;
+    margin: auto;
+ }
+ 
+/* PORTFOLIO */
 .mp-port-item{
     border-radius: 10px;
     margin: 10px 0;
     overflow: hidden;
+    position: relative;
 }
 
 .mp-port-item img{
     width: 100%;
 }
 
-.mp-footer{}
-
-.mp-image{
-   width: 300px;
-   margin: auto;
+.mp-port-hover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1abc9c;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }
+
+.mp-port-item:hover .mp-port-hover{
+    display: flex ;
+}
+
+.mp-port-hover i{
+    font-size: 70px;
+    color: white;
+}
+
+
+/* CONTACT ME */
 
 .mp-custom-border{
     background: none;
@@ -101,9 +153,12 @@ h2,h3{
     color: black;
 }
 
+/*  INFO */
+
 .mp-text-box{
     width: 90%;
-    margin: auto;
+    margin: auto ;
+    padding: 20px 0;
 }
 
 .mp-round{
@@ -113,6 +168,14 @@ h2,h3{
     width: 50px;
     display: inline-block;
     margin: 5px;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+.mp-footer{
+    line-height: 80px;
+    text-align: center;
 }
 
 
