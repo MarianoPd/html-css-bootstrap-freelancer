@@ -4,8 +4,9 @@
     padding: 50px 0;
 }
 
-.mp-no-margin-bottom{
-    margin-bottom: 0;
+h2,h3{
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 [class *= 'col-']{
@@ -32,6 +33,10 @@
 .mp-navy{
     background-color: #3a546d;
     color: white;
+}
+
+.mp-text-green{
+    color: #1abc9c;
 }
 
 .mp-button-1{
@@ -81,7 +86,8 @@
 .mp-footer{}
 
 .mp-image{
-   width: 300px ;
+   width: 300px;
+   margin: auto;
 }
 
 .mp-custom-border{
@@ -95,18 +101,18 @@
     color: black;
 }
 
-.mp-title, .mp-subtitle, .mp-separator{
-    text-align: center;
+.mp-text-box{
+    width: 90%;
+    margin: auto;
 }
 
-.mp-separator{
-    vertical-align: middle;
-}
-
-.mp-subtitle{}
-
-.mp-par{
-    height: 150px
+.mp-round{
+    border:1px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 5px;
 }
 
 
